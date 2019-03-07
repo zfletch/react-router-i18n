@@ -1,3 +1,13 @@
-import Example from './components/Example';
+import {
+  createI18n,
+  Link,
+  NavLink,
+  Redirect,
+} from './components/I18n';
 
-export default Example;
+export {
+  createI18n,
+  Link,
+  NavLink,
+  Redirect,
+};
