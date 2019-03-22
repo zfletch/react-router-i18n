@@ -1,6 +1,6 @@
 import { createI18n } from '../lib';
 
-const locales = ['en', 'fr'];
+const locales = ['en', 'fr', 'pl'];
 
 const translations = {
   en: {
@@ -38,6 +38,24 @@ const translations = {
       components: 'Composants',
     },
   },
+  pl: {
+    home: 'Eomehay',
+    about: 'Boutaay',
+    topics: 'Opicstay',
+    homePage: {
+      title: 'Omehay',
+      text: "Histay siay hetay omehay agepay",
+    },
+    aboutPage: {
+      title: 'Boutaay',
+      text: 'Boutaay hetay rojectpay',
+    },
+    topicPage: {
+      select: 'Leasepay electsay aay opictay',
+      rendering: 'Enderedray ithway React',
+      components: 'Omponentscay',
+    },
+  },  
 }
 
 const I18n = createI18n(

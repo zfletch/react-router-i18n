@@ -5,7 +5,7 @@ import { Link, NavLink } from '../lib';
 
 import I18n from './I18n';
 
-const base = '/:locale(en|fr)?';
+const base = '/:locale(en|fr|pl)?';
 
 const App = () => (
   <Router>
@@ -60,6 +60,13 @@ const Header = ({ location: { pathname }, match: { params: { locale }}}) => (
         </I18n>
       </NavLink>
     </li>
+    <li>
+      <NavLink ignoreLocale to={`/pl${stripLocale(pathname, locale)}`}>
+        <I18n t="piglatin">
+          Pig Latin
+        </I18n>
+      </NavLink>
+    </li>
   </ul>
 );
 
@@ -96,13 +103,25 @@ const Topics = ({ match }) => (
     </h2>
     <ul>
       <li>
-        <Link ignoreLocale to={`${match.url}/rendering`}> <I18n t='topicPage.rendering'> Rendering with React </I18n> </Link>
+        <Link ignoreLocale to={`${match.url}/rendering`}>
+          <I18n t="topicPage.rendering">
+            Rendering with React
+          </I18n>
+        </Link>
       </li>
       <li>
-        <Link ignoreLocale to={`${match.url}/components`}> <I18n t="topicPage.components"> Components </I18n> </Link>
+        <Link ignoreLocale to={`${match.url}/components`}>
+          <I18n t="topicPage.components">
+            Components
+          </I18n>
+        </Link>
       </li>
       <li>
-        <Link ignoreLocale to={`${match.url}/props-v-state`}> <I18n t="topicPage.props"> Props v. State </I18n> </Link>
+        <Link ignoreLocale to={`${match.url}/props-v-state`}>
+          <I18n t="topicPage.props">
+            Props v. State
+          </I18n>
+        </Link>
       </li>
     </ul>
 
