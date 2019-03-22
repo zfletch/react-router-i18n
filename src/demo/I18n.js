@@ -9,9 +9,15 @@ const translations = {
     topics: 'Topics',
     homePage: {
       title: 'Home',
+      text: "This is the homepage",
     },
     aboutPage: {
       title: 'About',
+      text: "About the project",
+    },
+    topicPage: {
+      select: 'Please select a topic',
+      components: 'Components',
     },
   },
   fr: {
@@ -25,6 +31,11 @@ const translations = {
     aboutPage: {
       title: 'À propos',
       text: 'À propos du sujet',
+    },
+    topicPage: {
+      select: 'Choisissez un sujet',
+      rendering: 'Rendu avec React',
+      components: 'Composants',
     },
   },
 }
