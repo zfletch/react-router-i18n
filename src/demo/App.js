@@ -117,7 +117,7 @@ const Topics = ({ match }) => (
         </Link>
       </li>
       <li>
-        <Link ignoreLocale to={`${match.url}/props-v-state`}>
+        <Link ignoreLocale to={`${match.url}/props_v_state`}>
           <I18n t="topicPage.props">
             Props v. State
           </I18n>
@@ -136,7 +136,9 @@ const Topics = ({ match }) => (
 
 const Topic = ({ match }) => (
   <div>
-    <h3>{match.params.topicId}</h3>
+    <h3>
+      <I18n t={match.params.topicId} />
+    </h3>
   </div>
 );
 

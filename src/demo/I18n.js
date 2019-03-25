@@ -19,6 +19,9 @@ const translations = {
       select: 'Please select a topic',
       components: 'Components',
     },
+    rendering: 'rendering',
+    components: 'components',
+    props_v_state: 'props-v-state',
   },
   fr: {
     home: 'Accueil',
@@ -37,6 +40,9 @@ const translations = {
       rendering: 'Rendu avec React',
       components: 'Composants',
     },
+    rendering: 'rendu',
+    components: 'composants',
+    props_v_state: 'accessoires-v-etat',
   },
   pl: {
     home: 'Eomehay',
@@ -55,7 +61,10 @@ const translations = {
       rendering: 'Enderedray ithway React',
       components: 'Omponentscay',
     },
-  },  
+    rendering: 'enderingray',
+    components: 'omponentscay',
+    props_v_state: 'ropspay-vay-tatesay',
+  },
 }
 
 const I18n = createI18n(
