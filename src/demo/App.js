@@ -5,7 +5,7 @@ import { Link, NavLink } from '../lib';
 
 import I18n from './I18n';
 
-const base = '/:locale(en|fr)?';
+const base = '/:locale(en|fr|pl)?';
 
 const App = () => (
   <Router>
@@ -45,6 +45,7 @@ const Header = ({ location: { pathname }, match: { params: { locale }}}) => (
         <I18n t="topics" />
       </NavLink>
     </li>
+    <br />
     <li>
       <NavLink ignoreLocale to={`/fr${stripLocale(pathname, locale)}`}>
         <I18n t="french">
@@ -56,6 +57,13 @@ const Header = ({ location: { pathname }, match: { params: { locale }}}) => (
       <NavLink ignoreLocale to={`/en${stripLocale(pathname, locale)}`}>
         <I18n t="english">
           English
+        </I18n>
+      </NavLink>
+    </li>
+    <li>
+      <NavLink ignoreLocale to={`/pl${stripLocale(pathname, locale)}`}>
+        <I18n t="piglatin">
+          Pig Latin
         </I18n>
       </NavLink>
     </li>
@@ -95,13 +103,25 @@ const Topics = ({ match }) => (
     </h2>
     <ul>
       <li>
-        <Link ignoreLocale to={`${match.url}/rendering`}>Rendering with React</Link>
+        <Link ignoreLocale to={`${match.url}/rendering`}>
+          <I18n t="topicPage.rendering">
+            Rendering with React
+          </I18n>
+        </Link>
       </li>
       <li>
-        <Link ignoreLocale to={`${match.url}/components`}>Components</Link>
+        <Link ignoreLocale to={`${match.url}/components`}>
+          <I18n t="topicPage.components">
+            Components
+          </I18n>
+        </Link>
       </li>
       <li>
-        <Link ignoreLocale to={`${match.url}/props-v-state`}>Props v. State</Link>
+        <Link ignoreLocale to={`${match.url}/props_v_state`}>
+          <I18n t="topicPage.props">
+            Props v. State
+          </I18n>
+        </Link>
       </li>
     </ul>
 
@@ -109,14 +129,16 @@ const Topics = ({ match }) => (
     <Route
       exact
       path={match.path}
-      render={() => <h3>Please select a topic.</h3>}
+      render={() => <h3> <I18n t="topicPage.select"> Please select a topic. </I18n> </h3>}
     />
   </div>
 );
 
 const Topic = ({ match }) => (
   <div>
-    <h3>{match.params.topicId}</h3>
+    <h3>
+      <I18n t={match.params.topicId} />
+    </h3>
   </div>
 );
 
