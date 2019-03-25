@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with full navbar and Home page 1`] = `
+<div>
+  <ul>
+    <li>
+      <a
+        aria-current="page"
+        className="active"
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        href="/"
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {
+              "locale": undefined,
+            },
+            "path": "/:locale(en|fr)?",
+            "url": "/",
+          }
+        }
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        href="/about"
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {
+              "locale": undefined,
+            },
+            "path": "/:locale(en|fr)?",
+            "url": "/",
+          }
+        }
+        onClick={[Function]}
+      >
+        About
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        href="/topics"
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {
+              "locale": undefined,
+            },
+            "path": "/:locale(en|fr)?",
+            "url": "/",
+          }
+        }
+        onClick={[Function]}
+      >
+        Topics
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        href="/fr/"
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {
+              "locale": undefined,
+            },
+            "path": "/:locale(en|fr)?",
+            "url": "/",
+          }
+        }
+        onClick={[Function]}
+      >
+        Français
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        href="/en/"
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {
+              "locale": undefined,
+            },
+            "path": "/:locale(en|fr)?",
+            "url": "/",
+          }
+        }
+        onClick={[Function]}
+      >
+        English
+      </a>
+    </li>
+  </ul>
+  <hr />
+  <div>
+    <h2>
+      Home
+    </h2>
+    <p>
+      This is the homepage
+    </p>
+  </div>
+</div>
+`;
