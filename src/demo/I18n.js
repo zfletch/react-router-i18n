@@ -9,11 +9,11 @@ const translations = {
     topics: 'Topics',
     homePage: {
       title: 'Home',
-      text: "This is the homepage",
+      text: 'This is the homepage',
     },
     aboutPage: {
       title: 'About',
-      text: "About the project",
+      text: 'About the project',
     },
     topicPage: {
       select: 'Please select a topic',
@@ -50,7 +50,7 @@ const translations = {
     topics: 'Opicstay',
     homePage: {
       title: 'Omehay',
-      text: "Histay siay hetay omehay agepay",
+      text: 'Histay siay hetay omehay agepay',
     },
     aboutPage: {
       title: 'Boutaay',
@@ -65,11 +65,11 @@ const translations = {
     components: 'omponentscay',
     props_v_state: 'ropspay-vay-tatesay',
   },
-}
+};
 
 const I18n = createI18n(
   locales,
   translations,
-)
+);
 
 export default I18n;

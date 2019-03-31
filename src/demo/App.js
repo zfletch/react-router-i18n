@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import { Link, NavLink } from '../lib';
@@ -6,19 +8,6 @@ import { Link, NavLink } from '../lib';
 import I18n from './I18n';
 
 const base = '/:locale(en|fr|pl)?';
-
-const App = () => (
-  <Router>
-    <div>
-      <Route path={base} component={Header} />
-      <hr />
-
-      <Route exact path={base} component={Home} />
-      <Route path={`${base}/about`} component={About} />
-      <Route path={`${base}/topics`} component={Topics} />
-    </div>
-  </Router>
-);
 
 const stripLocale = (pathname, locale) => {
   if (!locale) {
@@ -28,7 +17,7 @@ const stripLocale = (pathname, locale) => {
   return pathname.replace(`/${locale}`, '');
 };
 
-const Header = ({ location: { pathname }, match: { params: { locale }}}) => (
+const Header = ({ location: { pathname }, match: { params: { locale } } }) => (
   <ul>
     <li>
       <NavLink to="/">
@@ -83,6 +72,34 @@ const Home = () => (
   </div>
 );
 
+Header.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
+  }).isRequired,
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      locale: PropTypes.string,
+    }).isRequired,
+  }).isRequired,
+};
+
+const Topic = ({ match }) => (
+  <div>
+    <h3>
+      <I18n t={match.params.topicId} />
+    </h3>
+  </div>
+);
+
+Topic.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      locale: PropTypes.string,
+    }).isRequired,
+  }).isRequired,
+};
+
+
 const About = () => (
   <div>
     <h2>
@@ -129,17 +146,36 @@ const Topics = ({ match }) => (
     <Route
       exact
       path={match.path}
-      render={() => <h3> <I18n t="topicPage.select"> Please select a topic. </I18n> </h3>}
+      render={() => (
+        <h3>
+          {' '}
+          <I18n t="topicPage.select"> Please select a topic. </I18n>
+          {' '}
+        </h3>
+      )}
     />
   </div>
 );
 
-const Topic = ({ match }) => (
-  <div>
-    <h3>
-      <I18n t={match.params.topicId} />
-    </h3>
-  </div>
+Topics.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      locale: PropTypes.string,
+    }).isRequired,
+  }).isRequired,
+};
+
+const App = () => (
+  <Router>
+    <div>
+      <Route path={base} component={Header} />
+      <hr />
+
+      <Route exact path={base} component={Home} />
+      <Route path={`${base}/about`} component={About} />
+      <Route path={`${base}/topics`} component={Topics} />
+    </div>
+  </Router>
 );
 
 export default App;
