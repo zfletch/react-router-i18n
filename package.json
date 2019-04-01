@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/perseids-tools/react-router-i18n",
   "license": "MIT",
+  "dependencies": {},
   "peerDependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
