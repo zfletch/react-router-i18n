@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import { matchPath, withRouter } from 'react-router-dom';
 
 const hasKey = (obj, key) => (
@@ -25,7 +26,7 @@ const dig = (obj, keys) => {
   }
 
   return null;
-}
+};
 
 const getLocale = (path, defaultLocale, pathname) => {
   const { params } = matchPath(pathname, { path });
@@ -37,7 +38,7 @@ const getLocale = (path, defaultLocale, pathname) => {
   if (!locale) { return defaultLocale; }
 
   return locale;
-}
+};
 
 const getText = (path, defaultLocale, pathname, t, children, translations, missingText) => {
   const locale = getLocale(path, defaultLocale, pathname);
@@ -60,7 +61,7 @@ const getText = (path, defaultLocale, pathname, t, children, translations, missi
   if (children !== undefined) { return children; }
 
   return missingText;
-}
+};
 
 const createI18n = (locales, translations, missingText = false) => {
   const [defaultLocale] = locales;
@@ -72,7 +73,18 @@ const createI18n = (locales, translations, missingText = false) => {
     </Fragment>
   );
 
+  I18n.propTypes = {
+    location: PropTypes.shape({
+      pathname: PropTypes.string,
+    }).isRequired,
+    children: PropTypes.element,
+    t: PropTypes.string.isRequired,
+  };
+  I18n.defaultProps = {
+    children: undefined,
+  };
+
   return withRouter(I18n);
 };
 
-export default createI18n; 
+export default createI18n;
