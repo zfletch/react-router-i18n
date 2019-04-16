@@ -20,7 +20,7 @@ const chalk = require('chalk');
 const fs = require('fs-extra');
 const webpack = require('webpack');
 const bfj = require('bfj');
-const config = require('../config/webpack.config.demo');
+const configFactory = require('../config/webpack.config.demo');
 const paths = require('../config/paths');
 const checkRequiredFiles = require('react-dev-utils/checkRequiredFiles');
 const formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
@@ -40,13 +40,16 @@ const WARN_AFTER_CHUNK_GZIP_SIZE = 1024 * 1024;
 const isInteractive = process.stdout.isTTY;
 
 // Warn and crash if required files are missing
-if (!checkRequiredFiles([paths.appDemoIndexJs])) { // CRL: Updated with library index file
+if (!checkRequiredFiles([paths.appHtml, paths.appDemoIndexJs])) { // CRL: Updated with library index file
   process.exit(1);
 }
 
 // Process CLI arguments
 const argv = process.argv.slice(2);
 const writeStatsJson = argv.indexOf('--stats') !== -1;
+
+// Generate configuration
+const config = configFactory('production');
 
 // We require that you explictly set browsers and do not fall back to
 // browserslist defaults.
