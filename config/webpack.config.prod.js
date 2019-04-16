@@ -257,11 +257,11 @@ module.exports = {
           // "url" loader works just like "file" loader but it also embeds
           // assets smaller than specified size as data URLs to avoid requests.
           {
-            test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+            test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/, /\.svg$/],
             loader: require.resolve('url-loader'),
             options: {
-              limit: 10000,
-              name: 'static/media/[name].[hash:8].[ext]',
+              limit: 50000,
+              name: 'media/[name].[hash:8].[ext]',
             },
           },
           // Process application JS with Babel.
@@ -397,7 +397,7 @@ module.exports = {
             // by webpacks internal loaders.
             exclude: [/\.(js|mjs|jsx)$/, /\.html$/, /\.json$/],
             options: {
-              name: 'static/media/[name].[hash:8].[ext]',
+              name: 'media/[name].[hash:8].[ext]',
             },
           },
           // ** STOP ** Are you adding a new loader?
@@ -444,8 +444,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: 'static/css/index.css',
-      chunkFilename: 'static/css/[name].[contenthash:8].chunk.css',
+      filename: 'css/index.css',
+      chunkFilename: 'css/[name].[contenthash:8].chunk.css',
     }),
     // Generate a manifest file which contains a mapping of all asset filenames
     // to their corresponding output file so that tools can pick it up without
