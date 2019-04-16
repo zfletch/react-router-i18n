@@ -7,7 +7,7 @@ import { Link, NavLink } from '../lib';
 
 import I18n from './I18n';
 
-const base = '/:locale(en|fr|pl)?';
+const base = '/:locale(en|fr|il)?';
 
 const stripLocale = (pathname, locale) => {
   if (!locale) {
@@ -50,7 +50,7 @@ const Header = ({ location: { pathname }, match: { params: { locale } } }) => (
       </NavLink>
     </li>
     <li>
-      <NavLink ignoreLocale to={`/pl${stripLocale(pathname, locale)}`}>
+      <NavLink ignoreLocale to={`/il${stripLocale(pathname, locale)}`}>
         <I18n t="piglatin">
           Pig Latin
         </I18n>
@@ -166,7 +166,7 @@ Topics.propTypes = {
 };
 
 const App = () => (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <div>
       <Route path={base} component={Header} />
       <hr />

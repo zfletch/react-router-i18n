@@ -8,7 +8,7 @@
     "deploy": "gh-pages -d demo",
     "predeploy": "PUBLIC_URL='/react-router-i18n/' yarn run demo",
     "build": "node scripts/build.js",
-    "demo": "node scripts/demo.js",
+    "demo": "node scripts/demo.js && cp demo/index.html demo/404.html",
     "test": "node scripts/test.js --env=jsdom",
     "lint": "eslint --ext=js --ext=jsx ."
   },
