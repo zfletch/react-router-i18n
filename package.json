@@ -24,7 +24,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.1",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "react-test-renderer": "^16.6.3",
+    "react-testing-library": "^4.1.4"
   },
   "devDependencies": {
     "@babel/core": "7.2.2",
@@ -69,6 +71,7 @@
     "react": "^16.8.4",
     "react-app-polyfill": "^0.2.1",
     "react-testing-library": "^6.0.2",
+    "react-test-renderer": "^16.8.5",
     "react-dev-utils": "^7.0.3",
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.3.1",
