@@ -77,7 +77,7 @@ const createI18n = (locales, translations, missingText = false) => {
     location: PropTypes.shape({
       pathname: PropTypes.string,
     }).isRequired,
-    children: PropTypes.element,
+    children: PropTypes.node,
     t: PropTypes.string.isRequired,
   };
   I18n.defaultProps = {
