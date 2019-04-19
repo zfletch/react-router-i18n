@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`adds the locale to \`to\` when there is a match 1`] = `
+<div>
+  fr/test
+</div>
+`;
+
+exports[`passes through any other arguments 1`] = `
+<div>
+  test
+  example
+</div>
+`;
+
+exports[`renders normally when there is no match 1`] = `
+<div>
+  test
+</div>
+`;
+
+exports[`renders without crashing 1`] = `
+<div>
+  test
+</div>
+`;

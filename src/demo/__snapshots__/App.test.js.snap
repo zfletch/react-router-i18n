@@ -1,5 +1,266 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`renders text in another locale 1`] = `
+<div>
+  <ul>
+    <li>
+      <a
+        aria-current="page"
+        className="active"
+        history={
+          Object {
+            "action": "PUSH",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 2,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "key": "test",
+              "pathname": "/fr/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        href="/fr/"
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {
+              "locale": "fr",
+            },
+            "path": "/:locale(en|fr|il)?",
+            "url": "/fr/",
+          }
+        }
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Accueil
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        history={
+          Object {
+            "action": "PUSH",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 2,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "key": "test",
+              "pathname": "/fr/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        href="/fr/about"
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {
+              "locale": "fr",
+            },
+            "path": "/:locale(en|fr|il)?",
+            "url": "/fr/",
+          }
+        }
+        onClick={[Function]}
+      >
+        À propos
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        history={
+          Object {
+            "action": "PUSH",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 2,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "key": "test",
+              "pathname": "/fr/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        href="/fr/topics"
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {
+              "locale": "fr",
+            },
+            "path": "/:locale(en|fr|il)?",
+            "url": "/fr/",
+          }
+        }
+        onClick={[Function]}
+      >
+        Sujets
+      </a>
+    </li>
+    <br />
+    <li>
+      <a
+        aria-current="page"
+        className="active"
+        history={
+          Object {
+            "action": "PUSH",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 2,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "key": "test",
+              "pathname": "/fr/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        href="/fr/"
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {
+              "locale": "fr",
+            },
+            "path": "/:locale(en|fr|il)?",
+            "url": "/fr/",
+          }
+        }
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Français
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        history={
+          Object {
+            "action": "PUSH",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 2,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "key": "test",
+              "pathname": "/fr/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        href="/en/"
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {
+              "locale": "fr",
+            },
+            "path": "/:locale(en|fr|il)?",
+            "url": "/fr/",
+          }
+        }
+        onClick={[Function]}
+      >
+        English
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={null}
+        history={
+          Object {
+            "action": "PUSH",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 2,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "key": "test",
+              "pathname": "/fr/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        href="/il/"
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {
+              "locale": "fr",
+            },
+            "path": "/:locale(en|fr|il)?",
+            "url": "/fr/",
+          }
+        }
+        onClick={[Function]}
+      >
+        Pig Latin
+      </a>
+    </li>
+  </ul>
+  <hr />
+  <div>
+    <h2>
+      Accueil
+    </h2>
+    <p>
+      Ceci est la page d'accueil
+    </p>
+  </div>
+</div>
+`;
+
 exports[`renders with full navbar and Home page 1`] = `
 <div>
   <ul>
