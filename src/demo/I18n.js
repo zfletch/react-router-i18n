@@ -1,6 +1,6 @@
 import { createI18n } from '../lib';
 
-const locales = ['en', 'fr', 'pl'];
+const locales = ['en', 'fr', 'il'];
 
 const translations = {
   en: {
@@ -44,7 +44,7 @@ const translations = {
     components: 'composants',
     props_v_state: 'accessoires-v-etat',
   },
-  pl: {
+  il: {
     home: 'Eomehay',
     about: 'Boutaay',
     topics: 'Opicstay',

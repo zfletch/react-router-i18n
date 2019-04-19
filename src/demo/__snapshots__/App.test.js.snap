@@ -34,7 +34,7 @@ exports[`renders with full navbar and Home page 1`] = `
             "params": Object {
               "locale": undefined,
             },
-            "path": "/:locale(en|fr|pl)?",
+            "path": "/:locale(en|fr|il)?",
             "url": "/",
           }
         }
@@ -74,7 +74,7 @@ exports[`renders with full navbar and Home page 1`] = `
             "params": Object {
               "locale": undefined,
             },
-            "path": "/:locale(en|fr|pl)?",
+            "path": "/:locale(en|fr|il)?",
             "url": "/",
           }
         }
@@ -113,7 +113,7 @@ exports[`renders with full navbar and Home page 1`] = `
             "params": Object {
               "locale": undefined,
             },
-            "path": "/:locale(en|fr|pl)?",
+            "path": "/:locale(en|fr|il)?",
             "url": "/",
           }
         }
@@ -153,7 +153,7 @@ exports[`renders with full navbar and Home page 1`] = `
             "params": Object {
               "locale": undefined,
             },
-            "path": "/:locale(en|fr|pl)?",
+            "path": "/:locale(en|fr|il)?",
             "url": "/",
           }
         }
@@ -192,7 +192,7 @@ exports[`renders with full navbar and Home page 1`] = `
             "params": Object {
               "locale": undefined,
             },
-            "path": "/:locale(en|fr|pl)?",
+            "path": "/:locale(en|fr|il)?",
             "url": "/",
           }
         }
@@ -224,14 +224,14 @@ exports[`renders with full navbar and Home page 1`] = `
             "replace": [Function],
           }
         }
-        href="/pl/"
+        href="/il/"
         match={
           Object {
             "isExact": true,
             "params": Object {
               "locale": undefined,
             },
-            "path": "/:locale(en|fr|pl)?",
+            "path": "/:locale(en|fr|il)?",
             "url": "/",
           }
         }
