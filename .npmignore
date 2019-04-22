@@ -22,5 +22,7 @@ scripts
 config
 demo
 .travis.yml
-CHANGELOG.md
-README.md
+.eslintignore
+.eslintrc.json
+.tool-versions
+yarn.lock
