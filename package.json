@@ -1,8 +1,9 @@
 {
   "name": "react-router-i18n",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Opinionated internationalization (i18n) library using React Router",
   "main": "build/index.js",
+  "keywords": ["react-router", "i18n", "internationalization", "perseids"],
   "scripts": {
     "start": "node scripts/start.js",
     "deploy": "gh-pages -d demo",
