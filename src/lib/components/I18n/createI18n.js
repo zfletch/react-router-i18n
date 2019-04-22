@@ -50,12 +50,12 @@ const getText = (path, defaultLocale, pathname, t, children, translations, missi
     if (translation !== null) {
       return translation;
     }
+  }
 
-    const defaultTranslation = dig(translations[defaultLocale], splitT);
+  const defaultTranslation = dig(translations[defaultLocale], splitT);
 
-    if (defaultTranslation !== null) {
-      return defaultTranslation;
-    }
+  if (defaultTranslation !== null) {
+    return defaultTranslation;
   }
 
   if (children !== undefined) { return children; }

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default translations does not render when there is no translation 1`] = `null`;
+
+exports[`default translations uses props.children when there is no translation 1`] = `"Other"`;
+
+exports[`default translations uses the default if one is given and there is no translation 1`] = `"Missing"`;
+
+exports[`default translations uses the default language translation when there is none 1`] = `"Home"`;
+
+exports[`nested translations shows a nested translation 1`] = `"Nested"`;
+
+exports[`renders without crashing 1`] = `"Home"`;
+
+exports[`shows the translation of another locale 1`] = `"Accueil"`;
