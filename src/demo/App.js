@@ -7,7 +7,7 @@ import { Link, NavLink } from '../lib';
 
 import I18n from './I18n';
 
-const base = '/:locale(en|fr|il)?';
+const base = '/:locale(en|fr|pig)?';
 
 const stripLocale = (pathname, locale) => {
   if (!locale) {
@@ -50,7 +50,7 @@ const Header = ({ location: { pathname }, match: { params: { locale } } }) => (
       </NavLink>
     </li>
     <li>
-      <NavLink ignoreLocale to={`/il${stripLocale(pathname, locale)}`}>
+      <NavLink ignoreLocale to={`/pig${stripLocale(pathname, locale)}`}>
         <I18n t="piglatin">
           Pig Latin
         </I18n>

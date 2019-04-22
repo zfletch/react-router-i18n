@@ -35,7 +35,7 @@ exports[`renders text in another locale 1`] = `
             "params": Object {
               "locale": "fr",
             },
-            "path": "/:locale(en|fr|il)?",
+            "path": "/:locale(en|fr|pig)?",
             "url": "/fr/",
           }
         }
@@ -76,7 +76,7 @@ exports[`renders text in another locale 1`] = `
             "params": Object {
               "locale": "fr",
             },
-            "path": "/:locale(en|fr|il)?",
+            "path": "/:locale(en|fr|pig)?",
             "url": "/fr/",
           }
         }
@@ -116,7 +116,7 @@ exports[`renders text in another locale 1`] = `
             "params": Object {
               "locale": "fr",
             },
-            "path": "/:locale(en|fr|il)?",
+            "path": "/:locale(en|fr|pig)?",
             "url": "/fr/",
           }
         }
@@ -158,7 +158,7 @@ exports[`renders text in another locale 1`] = `
             "params": Object {
               "locale": "fr",
             },
-            "path": "/:locale(en|fr|il)?",
+            "path": "/:locale(en|fr|pig)?",
             "url": "/fr/",
           }
         }
@@ -199,7 +199,7 @@ exports[`renders text in another locale 1`] = `
             "params": Object {
               "locale": "fr",
             },
-            "path": "/:locale(en|fr|il)?",
+            "path": "/:locale(en|fr|pig)?",
             "url": "/fr/",
           }
         }
@@ -232,14 +232,14 @@ exports[`renders text in another locale 1`] = `
             "replace": [Function],
           }
         }
-        href="/il/"
+        href="/pig/"
         match={
           Object {
             "isExact": true,
             "params": Object {
               "locale": "fr",
             },
-            "path": "/:locale(en|fr|il)?",
+            "path": "/:locale(en|fr|pig)?",
             "url": "/fr/",
           }
         }
@@ -295,7 +295,7 @@ exports[`renders with full navbar and Home page 1`] = `
             "params": Object {
               "locale": undefined,
             },
-            "path": "/:locale(en|fr|il)?",
+            "path": "/:locale(en|fr|pig)?",
             "url": "/",
           }
         }
@@ -335,7 +335,7 @@ exports[`renders with full navbar and Home page 1`] = `
             "params": Object {
               "locale": undefined,
             },
-            "path": "/:locale(en|fr|il)?",
+            "path": "/:locale(en|fr|pig)?",
             "url": "/",
           }
         }
@@ -374,7 +374,7 @@ exports[`renders with full navbar and Home page 1`] = `
             "params": Object {
               "locale": undefined,
             },
-            "path": "/:locale(en|fr|il)?",
+            "path": "/:locale(en|fr|pig)?",
             "url": "/",
           }
         }
@@ -414,7 +414,7 @@ exports[`renders with full navbar and Home page 1`] = `
             "params": Object {
               "locale": undefined,
             },
-            "path": "/:locale(en|fr|il)?",
+            "path": "/:locale(en|fr|pig)?",
             "url": "/",
           }
         }
@@ -453,7 +453,7 @@ exports[`renders with full navbar and Home page 1`] = `
             "params": Object {
               "locale": undefined,
             },
-            "path": "/:locale(en|fr|il)?",
+            "path": "/:locale(en|fr|pig)?",
             "url": "/",
           }
         }
@@ -485,14 +485,14 @@ exports[`renders with full navbar and Home page 1`] = `
             "replace": [Function],
           }
         }
-        href="/il/"
+        href="/pig/"
         match={
           Object {
             "isExact": true,
             "params": Object {
               "locale": undefined,
             },
-            "path": "/:locale(en|fr|il)?",
+            "path": "/:locale(en|fr|pig)?",
             "url": "/",
           }
         }
