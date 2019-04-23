@@ -151,6 +151,35 @@ const Hello = () => (
 export default Hello;
 ```
 
+##### Note
+
+A `Link` must be used inside of a route that receives the `locale` param. For example:
+
+```jsx
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Link } from 'react-router-i18n';
+
+const base = '/:locale(en|fr)?';
+
+const App = () => (
+  <Router>
+    <div>
+      {/* This will not work because it does not receive `locale` */}
+      {/* <Link to="/home">Home</Link> */}
+
+      {/* Use code like this instead */}
+      <Route path={base} render={() => <Link to="/home">Home</Link>} />
+
+      <Route exact path={base} component={Home} />
+      <Route path={`${base}/hello`} component={Hello} />
+    </div>
+  </Router>
+);
+
+export default App;
+```
+
 #### Other functionality
 
 ##### Nested translations
