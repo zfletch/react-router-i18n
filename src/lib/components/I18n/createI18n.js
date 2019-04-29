@@ -73,6 +73,10 @@ const createI18n = (locales, translations, missingText = false) => {
     </Fragment>
   );
 
+  I18n.getTranslation = (t, { location: { pathname } }) => (
+    getText(path, defaultLocale, pathname, t, undefined, translations, missingText)
+  );
+
   I18n.propTypes = {
     location: PropTypes.shape({
       pathname: PropTypes.string,
