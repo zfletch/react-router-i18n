@@ -40,7 +40,7 @@ const getLocale = (path, defaultLocale, pathname) => {
   return locale;
 };
 
-const getText = (path, defaultLocale, pathname, t, children, translations, missingText) => {
+const getValue = (path, defaultLocale, pathname, t, children, translations, missingText) => {
   const locale = getLocale(path, defaultLocale, pathname);
   const splitT = t.split('.');
 
@@ -63,18 +63,42 @@ const getText = (path, defaultLocale, pathname, t, children, translations, missi
   return missingText;
 };
 
+const getTranslation = (
+  path,
+  defaultLocale,
+  pathname,
+  t,
+  args,
+  children,
+  translations,
+  missingText,
+) => {
+  const value = getValue(path, defaultLocale, pathname, t, children, translations, missingText);
+
+  if (typeof value === 'function') {
+    return value(args);
+  }
+
+  return value;
+};
+
 const createI18n = (locales, translations, missingText = false) => {
   const [defaultLocale] = locales;
   const path = `/:locale(${locales.join('|')})?`;
 
-  const I18n = ({ location: { pathname }, children, t }) => (
+  const I18n = ({
+    location: { pathname },
+    children,
+    t,
+    args,
+  }) => (
     <Fragment>
-      {getText(path, defaultLocale, pathname, t, children, translations, missingText)}
+      {getTranslation(path, defaultLocale, pathname, t, args, children, translations, missingText)}
     </Fragment>
   );
 
-  I18n.getTranslation = (t, { location: { pathname } }) => (
-    getText(path, defaultLocale, pathname, t, undefined, translations, missingText)
+  I18n.getTranslation = (t, { location: { pathname } }, args = {}) => (
+    getTranslation(path, defaultLocale, pathname, t, args, undefined, translations, missingText)
   );
 
   I18n.propTypes = {
@@ -83,9 +107,12 @@ const createI18n = (locales, translations, missingText = false) => {
     }).isRequired,
     children: PropTypes.node,
     t: PropTypes.string.isRequired,
+    // eslint-disable-next-line react/forbid-prop-types
+    args: PropTypes.object,
   };
   I18n.defaultProps = {
     children: undefined,
+    args: undefined,
   };
 
   return withRouter(I18n);

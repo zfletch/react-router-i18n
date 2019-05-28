@@ -66,6 +66,27 @@ describe('nested translations', () => {
   });
 });
 
+describe('function translations', () => {
+  beforeAll(() => {
+    translations = {
+      en: {
+        time: ({ hour, minute }) => `${hour}:${minute}`,
+      },
+    };
+  });
+
+  it('executes the function and uses the result as the translation', () => {
+    const component = (
+      <MemoryRouter>
+        <I18n t="time" args={{ hour: '12', minute: '30' }} />
+      </MemoryRouter>
+    );
+
+    const tree = renderer.create(component).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
 describe('default translations', () => {
   beforeAll(() => {
     translations = {
