@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -16,6 +16,10 @@ const stripLocale = (pathname, locale) => {
 
   return pathname.replace(`/${locale}`, '');
 };
+
+const Search = (props) => (
+  <input placeholder={I18n.getTranslation('search', props)} />
+);
 
 const Header = ({ location: { pathname }, match: { params: { locale } } }) => (
   <ul>
@@ -169,8 +173,8 @@ const App = () => (
   <Router basename={process.env.PUBLIC_URL}>
     <div>
       <Route path={base} component={Header} />
+      <Route path={base} component={Search} />
       <hr />
-
       <Route exact path={base} component={Home} />
       <Route path={`${base}/about`} component={About} />
       <Route path={`${base}/topics`} component={Topics} />

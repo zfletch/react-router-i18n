@@ -7,6 +7,7 @@ const translations = {
     home: 'Home',
     about: 'About',
     topics: 'Topics',
+    search: 'This search bar does nothing',
     homePage: {
       title: 'Home',
       text: 'This is the homepage',
@@ -27,6 +28,7 @@ const translations = {
     home: 'Accueil',
     about: 'À propos',
     topics: 'Sujets',
+    search: 'Ce fonction de chercher ne fait rien',
     homePage: {
       title: 'Accueil',
       text: "Ceci est la page d'accueil",
@@ -48,6 +50,7 @@ const translations = {
     home: 'Eomehay',
     about: 'Boutaay',
     topics: 'Opicstay',
+    search: 'Histay earchsay arbay oesday othingnay',
     homePage: {
       title: 'Omehay',
       text: 'Histay siay hetay omehay agepay',
