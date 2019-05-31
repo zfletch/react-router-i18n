@@ -249,9 +249,6 @@ exports[`renders text in another locale 1`] = `
       </a>
     </li>
   </ul>
-  <input
-    placeholder="Ce fonction de chercher ne fait rien"
-  />
   <hr />
   <div>
     <h2>
@@ -505,9 +502,6 @@ exports[`renders with full navbar and Home page 1`] = `
       </a>
     </li>
   </ul>
-  <input
-    placeholder="This search bar does nothing"
-  />
   <hr />
   <div>
     <h2>

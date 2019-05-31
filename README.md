@@ -217,7 +217,7 @@ const translations = {
     time: ({ hour, minute }) => `${hour}:${minute}`,
   },
   fr: {
-    time: ({ hour, minute }) => `${hour}h${minute}`
+    time: ({ hour, minute }) => `${hour}h${minute}`,
   },
 };
 ```
@@ -226,6 +226,40 @@ An argument can be passed to the function by giving the `I18n` component `args`:
 
 ```jsx
 <I18n t="time" args={{ hour: '12', minute: '30' }}  />
+```
+
+##### Translations outside of &lt;I18n&gt;
+
+Translation text can also be retrieved outside of an `I18n` component using the `getTranslation` function. For example:
+
+```javascript
+const translations = {
+  en: {
+    search: 'Search...'
+  },
+  fr: {
+    search: 'Rechercher...',
+  },
+}
+```
+
+```jsx
+const { location } = this.props;
+
+<input placeholder={I18n.getTranslation(location, 'search')} />
+```
+
+Note that
+[location](https://github.com/ReactTraining/react-router/blob/0f5d701648568cf95bef66c9be0798c15eef6d50/packages/react-router/docs/api/location.md)
+needs to be passed in as the first argument.
+The `location` prop is passed to a component from React Router.
+
+The `getTranslation` function takes an optional third argument that corresponds to the `args` attribute of the I18n component:
+
+```jsx
+const { location } = this.props;
+
+<input placeholder={I18n.getTranslation(location, 'time', { hour: '12', minute: '30' })} />
 ```
 
 ##### Default translation

@@ -10,6 +10,24 @@ exports[`default translations uses the default language translation when there i
 
 exports[`function translations executes the function and uses the result as the translation 1`] = `"12:30"`;
 
+exports[`function translations works with getTranslation 1`] = `
+<span>
+  12:30
+</span>
+`;
+
+exports[`getTranslation function shows the translation 1`] = `
+<span>
+  Home
+</span>
+`;
+
+exports[`getTranslation function shows the translation of another locale 1`] = `
+<span>
+  Accueil
+</span>
+`;
+
 exports[`nested translations shows a nested translation 1`] = `"Nested"`;
 
 exports[`renders without crashing 1`] = `"Home"`;
