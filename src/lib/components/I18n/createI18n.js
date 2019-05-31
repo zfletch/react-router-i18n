@@ -97,7 +97,7 @@ const createI18n = (locales, translations, missingText = false) => {
     </Fragment>
   );
 
-  I18n.getTranslation = (t, { location: { pathname } }, args = {}) => (
+  I18n.getTranslation = ({ pathname }, t, args = {}) => (
     getTranslation(path, defaultLocale, pathname, t, args, undefined, translations, missingText)
   );
 

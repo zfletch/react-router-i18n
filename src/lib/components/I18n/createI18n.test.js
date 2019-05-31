@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { MemoryRouter } from 'react-router-dom';
+import { MemoryRouter, withRouter } from 'react-router-dom';
 import createI18n from './createI18n';
 
 const locales = ['en', 'fr'];
@@ -43,6 +43,34 @@ it('shows the translation of another locale', () => {
   expect(tree).toMatchSnapshot();
 });
 
+describe('getTranslation function', () => {
+  const Example = withRouter(({ location }) => (
+    <span>{I18n.getTranslation(location, 'home')}</span>
+  ));
+
+  it('shows the translation', () => {
+    const component = (
+      <MemoryRouter>
+        <Example />
+      </MemoryRouter>
+    );
+
+    const tree = renderer.create(component).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('shows the translation of another locale', () => {
+    const component = (
+      <MemoryRouter initialEntries={['/fr/']}>
+        <Example />
+      </MemoryRouter>
+    );
+
+    const tree = renderer.create(component).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
 describe('nested translations', () => {
   beforeAll(() => {
     translations = {
@@ -79,6 +107,21 @@ describe('function translations', () => {
     const component = (
       <MemoryRouter>
         <I18n t="time" args={{ hour: '12', minute: '30' }} />
+      </MemoryRouter>
+    );
+
+    const tree = renderer.create(component).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('works with getTranslation', () => {
+    const Example = withRouter(({ location }) => (
+      <span>{I18n.getTranslation(location, 'time', { hour: '12', minute: '30' })}</span>
+    ));
+
+    const component = (
+      <MemoryRouter>
+        <Example />
       </MemoryRouter>
     );
 
