@@ -8,6 +8,8 @@ exports[`default translations uses the default if one is given and there is no t
 
 exports[`default translations uses the default language translation when there is none 1`] = `"Home"`;
 
+exports[`function translations executes the function and uses the result as the translation 1`] = `"12:30"`;
+
 exports[`nested translations shows a nested translation 1`] = `"Nested"`;
 
 exports[`renders without crashing 1`] = `"Home"`;

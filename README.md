@@ -186,7 +186,7 @@ export default App;
 
 The `translations` object can have objects inside of it. For example:
 
-```
+```javascript
 const translations = {
   en: {
     home: {
@@ -203,8 +203,29 @@ const translations = {
 
 These can be used by giving the `I18n` component `t="home.title"`:
 
-```
+```jsx
 <I18n t="home.title" />
+```
+
+##### Function translations
+
+The `translations` object can have a function as the translation. For example:
+
+```javascript
+const translations = {
+  en: {
+    time: ({ hour, minute }) => `${hour}:${minute}`,
+  },
+  fr: {
+    time: ({ hour, minute }) => `${hour}h${minute}`
+  },
+};
+```
+
+An argument can be passed to the function by giving the `I18n` component `args`:
+
+```jsx
+<I18n t="time" args={{ hour: '12', minute: '30' }}  />
 ```
 
 ##### Default translation
