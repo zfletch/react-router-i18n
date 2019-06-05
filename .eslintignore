@@ -1,6 +1,6 @@
-build/
-demo/
-config/
-scripts/
-src/demo/index.js
-src/demo/registerServiceWorker.js
+/build/
+/demo/
+/config/
+/scripts/
+/src/demo/index.js
+/src/demo/registerServiceWorker.js
