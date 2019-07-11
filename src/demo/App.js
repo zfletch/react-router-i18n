@@ -59,6 +59,17 @@ const Header = ({ location: { pathname }, match: { params: { locale } } }) => (
   </ul>
 );
 
+Header.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
+  }).isRequired,
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      locale: PropTypes.string,
+    }).isRequired,
+  }).isRequired,
+};
+
 const Home = () => (
   <div>
     <h2>
@@ -72,21 +83,10 @@ const Home = () => (
   </div>
 );
 
-Header.propTypes = {
-  location: PropTypes.shape({
-    pathname: PropTypes.string,
-  }).isRequired,
-  match: PropTypes.shape({
-    params: PropTypes.shape({
-      locale: PropTypes.string,
-    }).isRequired,
-  }).isRequired,
-};
-
-const Topic = ({ match }) => (
+const Topic = ({ match: { params: { topicId } } }) => (
   <div>
     <h3>
-      <I18n t={match.params.topicId} />
+      <I18n t={topicId} />
     </h3>
   </div>
 );
@@ -94,7 +94,7 @@ const Topic = ({ match }) => (
 Topic.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
-      locale: PropTypes.string,
+      topicId: PropTypes.string,
     }).isRequired,
   }).isRequired,
 };
@@ -113,28 +113,28 @@ const About = () => (
   </div>
 );
 
-const Topics = ({ match }) => (
+const Topics = ({ match: { url, path } }) => (
   <div>
     <h2>
       <I18n t="topics" />
     </h2>
     <ul>
       <li>
-        <Link ignoreLocale to={`${match.url}/rendering`}>
+        <Link ignoreLocale to={`${url}/rendering`}>
           <I18n t="topicPage.rendering">
             Rendering with React
           </I18n>
         </Link>
       </li>
       <li>
-        <Link ignoreLocale to={`${match.url}/components`}>
+        <Link ignoreLocale to={`${url}/components`}>
           <I18n t="topicPage.components">
             Components
           </I18n>
         </Link>
       </li>
       <li>
-        <Link ignoreLocale to={`${match.url}/props_v_state`}>
+        <Link ignoreLocale to={`${url}/props_v_state`}>
           <I18n t="topicPage.props">
             Props v. State
           </I18n>
@@ -142,10 +142,10 @@ const Topics = ({ match }) => (
       </li>
     </ul>
 
-    <Route path={`${match.path}/:topicId`} component={Topic} />
+    <Route path={`${path}/:topicId`} component={Topic} />
     <Route
       exact
-      path={match.path}
+      path={path}
       render={() => (
         <h3>
           {' '}
@@ -159,9 +159,8 @@ const Topics = ({ match }) => (
 
 Topics.propTypes = {
   match: PropTypes.shape({
-    params: PropTypes.shape({
-      locale: PropTypes.string,
-    }).isRequired,
+    url: PropTypes.string,
+    path: PropTypes.string,
   }).isRequired,
 };
 
