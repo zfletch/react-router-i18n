@@ -16,7 +16,7 @@ Note that this package has the following peer dependencies:
 {
   "react": "^16.8.4",
   "react-dom": "^16.8.1",
-  "react-router-dom": "^4.3.1"
+  "react-router-dom": "^4.3.0 || ^5.0.0"
 }
 ```
 
