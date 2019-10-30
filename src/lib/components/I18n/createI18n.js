@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { matchPath, withRouter } from 'react-router-dom';
 
@@ -92,9 +92,9 @@ const createI18n = (locales, translations, missingText = false) => {
     t,
     args,
   }) => (
-    <Fragment>
+    <>
       {getTranslation(path, defaultLocale, pathname, t, args, children, translations, missingText)}
-    </Fragment>
+    </>
   );
 
   I18n.getTranslation = ({ pathname }, t, args = {}) => (
