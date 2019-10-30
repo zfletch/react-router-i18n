@@ -1,11 +1,12 @@
 {
-  "main.js": "/react-router-i18n/static/js/main.3d68fe79.chunk.js",
-  "main.js.map": "/react-router-i18n/static/js/main.3d68fe79.chunk.js.map",
-  "runtime~main.js": "/react-router-i18n/static/js/runtime~main.198e0397.js",
-  "runtime~main.js.map": "/react-router-i18n/static/js/runtime~main.198e0397.js.map",
-  "static/js/2.a0f37ab4.chunk.js": "/react-router-i18n/static/js/2.a0f37ab4.chunk.js",
-  "static/js/2.a0f37ab4.chunk.js.map": "/react-router-i18n/static/js/2.a0f37ab4.chunk.js.map",
+  "main.js": "/react-router-i18n/static/js/main.cdc697bb.chunk.js",
+  "main.js.map": "/react-router-i18n/static/js/main.cdc697bb.chunk.js.map",
+  "runtime~main.js": "/react-router-i18n/static/js/runtime~main.bc5016e4.js",
+  "runtime~main.js.map": "/react-router-i18n/static/js/runtime~main.bc5016e4.js.map",
+  "static/js/2.9026fabe.chunk.js": "/react-router-i18n/static/js/2.9026fabe.chunk.js",
+  "static/js/2.9026fabe.chunk.js.map": "/react-router-i18n/static/js/2.9026fabe.chunk.js.map",
   "index.html": "/react-router-i18n/index.html",
-  "precache-manifest.5a0c89566e57d6d0dd5a1fc97688dcd4.js": "/react-router-i18n/precache-manifest.5a0c89566e57d6d0dd5a1fc97688dcd4.js",
-  "service-worker.js": "/react-router-i18n/service-worker.js"
+  "precache-manifest.464d2cccbbeb073affcdf4042924b379.js": "/react-router-i18n/precache-manifest.464d2cccbbeb073affcdf4042924b379.js",
+  "service-worker.js": "/react-router-i18n/service-worker.js",
+  "static/js/2.9026fabe.chunk.js.LICENSE": "/react-router-i18n/static/js/2.9026fabe.chunk.js.LICENSE"
 }
