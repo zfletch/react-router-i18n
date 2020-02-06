@@ -2,43 +2,35 @@
 
 exports[`renders text in another locale 1`] = `
 <div>
-  <ul>
+  <ul
+    className="header"
+    history={
+      Object {
+        "action": "PUSH",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 2,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "test",
+          "pathname": "/fr/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
     <li>
       <a
         aria-current="page"
         className="active"
-        history={
-          Object {
-            "action": "PUSH",
-            "block": [Function],
-            "createHref": [Function],
-            "go": [Function],
-            "goBack": [Function],
-            "goForward": [Function],
-            "length": 2,
-            "listen": [Function],
-            "location": Object {
-              "hash": "",
-              "key": "test",
-              "pathname": "/fr/",
-              "search": "",
-              "state": undefined,
-            },
-            "push": [Function],
-            "replace": [Function],
-          }
-        }
         href="/fr/"
-        match={
-          Object {
-            "isExact": true,
-            "params": Object {
-              "locale": "fr",
-            },
-            "path": "/:locale(en|fr|pig)?",
-            "url": "/fr/",
-          }
-        }
         onClick={[Function]}
         style={Object {}}
       >
@@ -48,38 +40,7 @@ exports[`renders text in another locale 1`] = `
     <li>
       <a
         aria-current={null}
-        history={
-          Object {
-            "action": "PUSH",
-            "block": [Function],
-            "createHref": [Function],
-            "go": [Function],
-            "goBack": [Function],
-            "goForward": [Function],
-            "length": 2,
-            "listen": [Function],
-            "location": Object {
-              "hash": "",
-              "key": "test",
-              "pathname": "/fr/",
-              "search": "",
-              "state": undefined,
-            },
-            "push": [Function],
-            "replace": [Function],
-          }
-        }
         href="/fr/about"
-        match={
-          Object {
-            "isExact": true,
-            "params": Object {
-              "locale": "fr",
-            },
-            "path": "/:locale(en|fr|pig)?",
-            "url": "/fr/",
-          }
-        }
         onClick={[Function]}
       >
         À propos
@@ -88,38 +49,7 @@ exports[`renders text in another locale 1`] = `
     <li>
       <a
         aria-current={null}
-        history={
-          Object {
-            "action": "PUSH",
-            "block": [Function],
-            "createHref": [Function],
-            "go": [Function],
-            "goBack": [Function],
-            "goForward": [Function],
-            "length": 2,
-            "listen": [Function],
-            "location": Object {
-              "hash": "",
-              "key": "test",
-              "pathname": "/fr/",
-              "search": "",
-              "state": undefined,
-            },
-            "push": [Function],
-            "replace": [Function],
-          }
-        }
         href="/fr/topics"
-        match={
-          Object {
-            "isExact": true,
-            "params": Object {
-              "locale": "fr",
-            },
-            "path": "/:locale(en|fr|pig)?",
-            "url": "/fr/",
-          }
-        }
         onClick={[Function]}
       >
         Sujets
@@ -130,38 +60,7 @@ exports[`renders text in another locale 1`] = `
       <a
         aria-current="page"
         className="active"
-        history={
-          Object {
-            "action": "PUSH",
-            "block": [Function],
-            "createHref": [Function],
-            "go": [Function],
-            "goBack": [Function],
-            "goForward": [Function],
-            "length": 2,
-            "listen": [Function],
-            "location": Object {
-              "hash": "",
-              "key": "test",
-              "pathname": "/fr/",
-              "search": "",
-              "state": undefined,
-            },
-            "push": [Function],
-            "replace": [Function],
-          }
-        }
         href="/fr/"
-        match={
-          Object {
-            "isExact": true,
-            "params": Object {
-              "locale": "fr",
-            },
-            "path": "/:locale(en|fr|pig)?",
-            "url": "/fr/",
-          }
-        }
         onClick={[Function]}
         style={Object {}}
       >
@@ -171,38 +70,7 @@ exports[`renders text in another locale 1`] = `
     <li>
       <a
         aria-current={null}
-        history={
-          Object {
-            "action": "PUSH",
-            "block": [Function],
-            "createHref": [Function],
-            "go": [Function],
-            "goBack": [Function],
-            "goForward": [Function],
-            "length": 2,
-            "listen": [Function],
-            "location": Object {
-              "hash": "",
-              "key": "test",
-              "pathname": "/fr/",
-              "search": "",
-              "state": undefined,
-            },
-            "push": [Function],
-            "replace": [Function],
-          }
-        }
         href="/en/"
-        match={
-          Object {
-            "isExact": true,
-            "params": Object {
-              "locale": "fr",
-            },
-            "path": "/:locale(en|fr|pig)?",
-            "url": "/fr/",
-          }
-        }
         onClick={[Function]}
       >
         English
@@ -211,38 +79,7 @@ exports[`renders text in another locale 1`] = `
     <li>
       <a
         aria-current={null}
-        history={
-          Object {
-            "action": "PUSH",
-            "block": [Function],
-            "createHref": [Function],
-            "go": [Function],
-            "goBack": [Function],
-            "goForward": [Function],
-            "length": 2,
-            "listen": [Function],
-            "location": Object {
-              "hash": "",
-              "key": "test",
-              "pathname": "/fr/",
-              "search": "",
-              "state": undefined,
-            },
-            "push": [Function],
-            "replace": [Function],
-          }
-        }
         href="/pig/"
-        match={
-          Object {
-            "isExact": true,
-            "params": Object {
-              "locale": "fr",
-            },
-            "path": "/:locale(en|fr|pig)?",
-            "url": "/fr/",
-          }
-        }
         onClick={[Function]}
       >
         Pig Latin
@@ -263,42 +100,34 @@ exports[`renders text in another locale 1`] = `
 
 exports[`renders with full navbar and Home page 1`] = `
 <div>
-  <ul>
+  <ul
+    className="header"
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
     <li>
       <a
         aria-current="page"
         className="active"
-        history={
-          Object {
-            "action": "POP",
-            "block": [Function],
-            "createHref": [Function],
-            "go": [Function],
-            "goBack": [Function],
-            "goForward": [Function],
-            "length": 1,
-            "listen": [Function],
-            "location": Object {
-              "hash": "",
-              "pathname": "/",
-              "search": "",
-              "state": undefined,
-            },
-            "push": [Function],
-            "replace": [Function],
-          }
-        }
         href="/"
-        match={
-          Object {
-            "isExact": true,
-            "params": Object {
-              "locale": undefined,
-            },
-            "path": "/:locale(en|fr|pig)?",
-            "url": "/",
-          }
-        }
         onClick={[Function]}
         style={Object {}}
       >
@@ -308,37 +137,7 @@ exports[`renders with full navbar and Home page 1`] = `
     <li>
       <a
         aria-current={null}
-        history={
-          Object {
-            "action": "POP",
-            "block": [Function],
-            "createHref": [Function],
-            "go": [Function],
-            "goBack": [Function],
-            "goForward": [Function],
-            "length": 1,
-            "listen": [Function],
-            "location": Object {
-              "hash": "",
-              "pathname": "/",
-              "search": "",
-              "state": undefined,
-            },
-            "push": [Function],
-            "replace": [Function],
-          }
-        }
         href="/about"
-        match={
-          Object {
-            "isExact": true,
-            "params": Object {
-              "locale": undefined,
-            },
-            "path": "/:locale(en|fr|pig)?",
-            "url": "/",
-          }
-        }
         onClick={[Function]}
       >
         About
@@ -347,37 +146,7 @@ exports[`renders with full navbar and Home page 1`] = `
     <li>
       <a
         aria-current={null}
-        history={
-          Object {
-            "action": "POP",
-            "block": [Function],
-            "createHref": [Function],
-            "go": [Function],
-            "goBack": [Function],
-            "goForward": [Function],
-            "length": 1,
-            "listen": [Function],
-            "location": Object {
-              "hash": "",
-              "pathname": "/",
-              "search": "",
-              "state": undefined,
-            },
-            "push": [Function],
-            "replace": [Function],
-          }
-        }
         href="/topics"
-        match={
-          Object {
-            "isExact": true,
-            "params": Object {
-              "locale": undefined,
-            },
-            "path": "/:locale(en|fr|pig)?",
-            "url": "/",
-          }
-        }
         onClick={[Function]}
       >
         Topics
@@ -387,37 +156,7 @@ exports[`renders with full navbar and Home page 1`] = `
     <li>
       <a
         aria-current={null}
-        history={
-          Object {
-            "action": "POP",
-            "block": [Function],
-            "createHref": [Function],
-            "go": [Function],
-            "goBack": [Function],
-            "goForward": [Function],
-            "length": 1,
-            "listen": [Function],
-            "location": Object {
-              "hash": "",
-              "pathname": "/",
-              "search": "",
-              "state": undefined,
-            },
-            "push": [Function],
-            "replace": [Function],
-          }
-        }
         href="/fr/"
-        match={
-          Object {
-            "isExact": true,
-            "params": Object {
-              "locale": undefined,
-            },
-            "path": "/:locale(en|fr|pig)?",
-            "url": "/",
-          }
-        }
         onClick={[Function]}
       >
         Français
@@ -426,37 +165,7 @@ exports[`renders with full navbar and Home page 1`] = `
     <li>
       <a
         aria-current={null}
-        history={
-          Object {
-            "action": "POP",
-            "block": [Function],
-            "createHref": [Function],
-            "go": [Function],
-            "goBack": [Function],
-            "goForward": [Function],
-            "length": 1,
-            "listen": [Function],
-            "location": Object {
-              "hash": "",
-              "pathname": "/",
-              "search": "",
-              "state": undefined,
-            },
-            "push": [Function],
-            "replace": [Function],
-          }
-        }
         href="/en/"
-        match={
-          Object {
-            "isExact": true,
-            "params": Object {
-              "locale": undefined,
-            },
-            "path": "/:locale(en|fr|pig)?",
-            "url": "/",
-          }
-        }
         onClick={[Function]}
       >
         English
@@ -465,37 +174,7 @@ exports[`renders with full navbar and Home page 1`] = `
     <li>
       <a
         aria-current={null}
-        history={
-          Object {
-            "action": "POP",
-            "block": [Function],
-            "createHref": [Function],
-            "go": [Function],
-            "goBack": [Function],
-            "goForward": [Function],
-            "length": 1,
-            "listen": [Function],
-            "location": Object {
-              "hash": "",
-              "pathname": "/",
-              "search": "",
-              "state": undefined,
-            },
-            "push": [Function],
-            "replace": [Function],
-          }
-        }
         href="/pig/"
-        match={
-          Object {
-            "isExact": true,
-            "params": Object {
-              "locale": undefined,
-            },
-            "path": "/:locale(en|fr|pig)?",
-            "url": "/",
-          }
-        }
         onClick={[Function]}
       >
         Pig Latin

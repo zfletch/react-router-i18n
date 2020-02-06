@@ -17,8 +17,12 @@ const stripLocale = (pathname, locale) => {
   return pathname.replace(`/${locale}`, '');
 };
 
-const Header = ({ location: { pathname }, match: { params: { locale } } }) => (
-  <ul>
+const Header = ({
+  location: { pathname },
+  match: { params: { locale } },
+  history,
+}) => (
+  <ul className="header" history={history}>
     <li>
       <NavLink to="/">
         <I18n t="home" />
@@ -68,6 +72,8 @@ Header.propTypes = {
       locale: PropTypes.string,
     }).isRequired,
   }).isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  history: PropTypes.object.isRequired,
 };
 
 const Home = () => (

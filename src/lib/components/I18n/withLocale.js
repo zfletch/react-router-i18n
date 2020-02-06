@@ -5,7 +5,12 @@ import { withRouter } from 'react-router-dom';
 
 const withLocale = (WrappedComponent) => {
   const NewComponent = ({
-    to, match, ignoreLocale, staticContext, ...rest
+    to,
+    match,
+    history,
+    ignoreLocale,
+    staticContext,
+    ...rest
   }) => {
     const { params } = match;
 
@@ -13,7 +18,6 @@ const withLocale = (WrappedComponent) => {
       return (
         <WrappedComponent
           to={to}
-          match={match}
           {...rest}
         />
       );
@@ -30,7 +34,6 @@ const withLocale = (WrappedComponent) => {
     return (
       <WrappedComponent
         to={path}
-        match={match}
         {...rest}
       />
     );
@@ -46,11 +49,14 @@ const withLocale = (WrappedComponent) => {
     ignoreLocale: PropTypes.bool,
     // eslint-disable-next-line react/forbid-prop-types
     staticContext: PropTypes.object,
+    // eslint-disable-next-line react/forbid-prop-types
+    history: PropTypes.object,
   };
 
   NewComponent.defaultProps = {
     ignoreLocale: false,
     staticContext: undefined,
+    history: undefined,
   };
 
   return withRouter(NewComponent);

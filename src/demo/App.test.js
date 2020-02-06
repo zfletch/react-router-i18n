@@ -10,7 +10,7 @@ it('renders with full navbar and Home page', () => {
 
 it('renders text in another locale', () => {
   const component = renderer.create(<App />);
-  const { history } = component.root.findByProps({ href: '/' }).props;
+  const { history } = component.root.findByProps({ className: 'header' }).props;
 
   history.push('/fr/');
 
