@@ -1,6 +1,6 @@
 {
   "name": "react-router-i18n",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Opinionated internationalization (i18n) library using React Router",
   "main": "build/index.js",
   "keywords": [
