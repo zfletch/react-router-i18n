@@ -20,3 +20,16 @@ it('renders text in another locale', () => {
   const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+it('renders Links as well as NavLinks', () => {
+  const component = renderer.create(<App />);
+  const { history } = component.root.findByProps({ className: 'header' }).props;
+
+  history.push('/topics');
+
+  // this is generated randomly; set it to avoid spurious diffs
+  history.location.key = 'test';
+
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});

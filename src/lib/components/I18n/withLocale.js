@@ -8,6 +8,7 @@ const withLocale = (WrappedComponent) => {
     to,
     match,
     history,
+    location,
     ignoreLocale,
     staticContext,
     ...rest
@@ -51,12 +52,15 @@ const withLocale = (WrappedComponent) => {
     staticContext: PropTypes.object,
     // eslint-disable-next-line react/forbid-prop-types
     history: PropTypes.object,
+    // eslint-disable-next-line react/forbid-prop-types
+    location: PropTypes.object,
   };
 
   NewComponent.defaultProps = {
     ignoreLocale: false,
     staticContext: undefined,
     history: undefined,
+    location: undefined,
   };
 
   return withRouter(NewComponent);
