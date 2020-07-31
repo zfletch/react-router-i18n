@@ -163,7 +163,6 @@ describe('default translations', () => {
     expect(tree).toMatchSnapshot();
   });
 
-
   it('does not render when there is no translation', () => {
     const component = (
       <MemoryRouter>

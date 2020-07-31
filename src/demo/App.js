@@ -105,7 +105,6 @@ Topic.propTypes = {
   }).isRequired,
 };
 
-
 const About = () => (
   <div>
     <h2>
