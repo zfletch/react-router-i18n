@@ -24,11 +24,14 @@ jobs:
           CI: true
 
       - name: Build
-        run: yarn build
+        run: yarn demo
+        env:
+          PUBLIC_URL: /react-router-i18n
 
       - name: Deploy GitHub
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ github.token }}
           BRANCH: gh-pages
-          FOLDER: build
+          FOLDER: demo
+          CLEAN: true
