@@ -110,6 +110,7 @@ module.exports = {
     path: paths.appBuild,
     filename: 'index.js',
     libraryTarget: 'umd',
+    globalObject: 'this',
 
     // We inferred the "public path" (such as / or /my-project) from homepage.
     publicPath: publicPath,
