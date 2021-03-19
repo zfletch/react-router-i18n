@@ -68,13 +68,13 @@ const base = '/:locale(en|fr)?';
 
 const App = () => (
   <Router>
-    <div>
+    <>
       {/* <Route exact path="/" component={Home} /> */}
       <Route exact path={base} component={Home} />
 
       {/* <Route path="/hello" component={Hello} /> */}
       <Route path={`${base}/hello`} component={Hello} />
-    </div>
+    </>
   </Router>
 );
 
@@ -164,7 +164,7 @@ const base = '/:locale(en|fr)?';
 
 const App = () => (
   <Router>
-    <div>
+    <>
       {/* This will not work because it does not receive `locale` */}
       {/* <Link to="/home">Home</Link> */}
 
@@ -173,7 +173,7 @@ const App = () => (
 
       <Route exact path={base} component={Home} />
       <Route path={`${base}/hello`} component={Hello} />
-    </div>
+    </>
   </Router>
 );
 
@@ -301,13 +301,13 @@ export default I18n;
 Used in this way:
 
 ```jsx
-<div>
+<>
   <I18n t="hello" />
   <I18n t="goodbye">
     Goodbye
   </I18n>
   <I18n t="other" />
-</div>
+</>
 ```
 
 The page when viewed with `/fr` will show:

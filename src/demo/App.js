@@ -77,7 +77,7 @@ Header.propTypes = {
 };
 
 const Home = () => (
-  <div>
+  <>
     <h2>
       <I18n t="homePage.title" />
     </h2>
@@ -86,15 +86,15 @@ const Home = () => (
         This is the homepage
       </I18n>
     </p>
-  </div>
+  </>
 );
 
 const Topic = ({ match: { params: { topicId } } }) => (
-  <div>
+  <>
     <h3>
       <I18n t={topicId} />
     </h3>
-  </div>
+  </>
 );
 
 Topic.propTypes = {
@@ -106,7 +106,7 @@ Topic.propTypes = {
 };
 
 const About = () => (
-  <div>
+  <>
     <h2>
       <I18n t="aboutPage.title" />
     </h2>
@@ -115,11 +115,11 @@ const About = () => (
         About the project
       </I18n>
     </p>
-  </div>
+  </>
 );
 
 const Topics = ({ match: { url, path } }) => (
-  <div>
+  <>
     <h2>
       <I18n t="topics" />
     </h2>
@@ -159,7 +159,7 @@ const Topics = ({ match: { url, path } }) => (
         </h3>
       )}
     />
-  </div>
+  </>
 );
 
 Topics.propTypes = {
@@ -171,13 +171,13 @@ Topics.propTypes = {
 
 const App = () => (
   <Router basename={process.env.PUBLIC_URL}>
-    <div>
+    <>
       <Route path={base} component={Header} />
       <hr />
       <Route exact path={base} component={Home} />
       <Route path={`${base}/about`} component={About} />
       <Route path={`${base}/topics`} component={Topics} />
-    </div>
+    </>
   </Router>
 );
 

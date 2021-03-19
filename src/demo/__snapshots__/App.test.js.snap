@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders Links as well as NavLinks 1`] = `
-<div>
+Array [
   <ul
     className="header"
     history={
@@ -85,49 +85,47 @@ exports[`renders Links as well as NavLinks 1`] = `
         Pig Latin
       </a>
     </li>
-  </ul>
-  <hr />
-  <div>
-    <h2>
-      Topics
-    </h2>
-    <ul>
-      <li>
-        <a
-          href="/topics/rendering"
-          onClick={[Function]}
-        >
-          Rendering with React
-        </a>
-      </li>
-      <li>
-        <a
-          href="/topics/components"
-          onClick={[Function]}
-        >
-          Components
-        </a>
-      </li>
-      <li>
-        <a
-          href="/topics/props_v_state"
-          onClick={[Function]}
-        >
-          Props v. State
-        </a>
-      </li>
-    </ul>
-    <h3>
-       
-      Please select a topic
-       
-    </h3>
-  </div>
-</div>
+  </ul>,
+  <hr />,
+  <h2>
+    Topics
+  </h2>,
+  <ul>
+    <li>
+      <a
+        href="/topics/rendering"
+        onClick={[Function]}
+      >
+        Rendering with React
+      </a>
+    </li>
+    <li>
+      <a
+        href="/topics/components"
+        onClick={[Function]}
+      >
+        Components
+      </a>
+    </li>
+    <li>
+      <a
+        href="/topics/props_v_state"
+        onClick={[Function]}
+      >
+        Props v. State
+      </a>
+    </li>
+  </ul>,
+  <h3>
+     
+    Please select a topic
+     
+  </h3>,
+]
 `;
 
 exports[`renders text in another locale 1`] = `
-<div>
+Array [
   <ul
     className="header"
     history={
@@ -211,21 +209,19 @@ exports[`renders text in another locale 1`] = `
         Pig Latin
       </a>
     </li>
-  </ul>
-  <hr />
-  <div>
-    <h2>
-      Accueil
-    </h2>
-    <p>
-      Ceci est la page d'accueil
-    </p>
-  </div>
-</div>
+  </ul>,
+  <hr />,
+  <h2>
+    Accueil
+  </h2>,
+  <p>
+    Ceci est la page d'accueil
+  </p>,
+]
 `;
 
 exports[`renders with full navbar and Home page 1`] = `
-<div>
+Array [
   <ul
     className="header"
     history={
@@ -306,15 +302,13 @@ exports[`renders with full navbar and Home page 1`] = `
         Pig Latin
       </a>
     </li>
-  </ul>
-  <hr />
-  <div>
-    <h2>
-      Home
-    </h2>
-    <p>
-      This is the homepage
-    </p>
-  </div>
-</div>
+  </ul>,
+  <hr />,
+  <h2>
+    Home
+  </h2>,
+  <p>
+    This is the homepage
+  </p>,
+]
 `;
