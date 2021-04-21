@@ -29,12 +29,12 @@ const Header = ({
       </NavLink>
     </li>
     <li>
-      <NavLink to="/about">
+      <NavLink to={{ pathname: '/about' }}>
         <I18n t="about" />
       </NavLink>
     </li>
     <li>
-      <NavLink to="/topics">
+      <NavLink to={(location) => ({ ...location, pathname: '/topics' })}>
         <I18n t="topics" />
       </NavLink>
     </li>
