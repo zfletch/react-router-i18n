@@ -6,8 +6,7 @@
   "keywords": [
     "react-router",
     "i18n",
-    "internationalization",
-    "perseids"
+    "internationalization"
   ],
   "scripts": {
     "start": "node scripts/start.js",
@@ -20,12 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/perseids-tools/react-router-i18n.git"
+    "url": "git+https://github.com/zfletch/react-router-i18n.git"
   },
   "bugs": {
-    "url": "https://github.com/perseids-tools/react-router-i18n/issues"
+    "url": "https://github.com/zfletch/react-router-i18n/issues"
   },
-  "homepage": "https://github.com/perseids-tools/react-router-i18n",
+  "homepage": "https://github.com/zfletch/react-router-i18n",
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.7.2"

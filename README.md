@@ -4,7 +4,7 @@ This is a small opinionated library for I18n (internationalization) using React 
 
 ## Demo
 
-[https://perseids-tools.github.io/react-router-i18n/](https://perseids-tools.github.io/react-router-i18n/)
+[https://zfletch.github.io/react-router-i18n/](https://zfletch.github.io/react-router-i18n/)
 
 ## Installation
 
